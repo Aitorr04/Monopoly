@@ -17,7 +17,6 @@ public class CardsTest extends TestCase {
         chanceCard = new MoneyCard("Lose 50 dollars", -50, Card.TYPE_CHANCE);
         gameMaster.getGameBoard().addCard(ccCard);
     }
-    
     public void testCardType() {
         Card card = gameMaster.drawCCCard();
         assertEquals(Card.TYPE_CC, ccCard.getCardType());
