@@ -1,7 +1,11 @@
 package edu.ncsu.monopoly;
 
+import java.security.SecureRandom;
+
 public class Die {
-	public int getRoll() {
-		return (int)(Math.random() * 6) + 1;
-	}
+    private static final SecureRandom random = new SecureRandom();
+
+    public int getRoll() {
+        return random.nextInt(6) + 1;
+    }
 }
